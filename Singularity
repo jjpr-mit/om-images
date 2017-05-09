@@ -21,7 +21,7 @@ From: bethgelab/jupyter-torch:cuda8.0-cudnn5
     apt-get -y update && apt-get -y install wget
     apt-get clean
     
-    NV_DRIVER_VERSION=375.20      # <---- EDIT: CHANGE THIS FOR YOUR SYSTEM
+    NV_DRIVER_VERSION=375.39      # <---- EDIT: CHANGE THIS FOR YOUR SYSTEM
     NV_DRIVER_FILE=NVIDIA-Linux-x86_64-${NV_DRIVER_VERSION}.run
 
     working_dir=$(pwd)
