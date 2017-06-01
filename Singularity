@@ -21,7 +21,7 @@ From: tensorflow/tensorflow:1.1.0-gpu-py3
     apt-get -y update && apt-get -y install wget
     apt-get clean
     
-    NV_DRIVER_VERSION=375.20      # <---- EDIT: CHANGE THIS FOR YOUR SYSTEM
+    NV_DRIVER_VERSION=375.39      # <---- EDIT: CHANGE THIS FOR YOUR SYSTEM
     NV_DRIVER_FILE=NVIDIA-Linux-x86_64-${NV_DRIVER_VERSION}.run
 
     working_dir=$(pwd)
@@ -35,7 +35,7 @@ From: tensorflow/tensorflow:1.1.0-gpu-py3
     mv NVIDIA-Linux-x86_64-${NV_DRIVER_VERSION} NVIDIA-Linux-x86_64
     cd NVIDIA-Linux-x86_64/
     for n in *.$NV_DRIVER_VERSION; do
-        ln -v -s $n ${n%.375.20}   # <---- EDIT: CHANGE THIS IF DRIVER VERSION
+        ln -v -s $n ${n%.375.39}   # <---- EDIT: CHANGE THIS IF DRIVER VERSION
     done
     ln -v -s libnvidia-ml.so.$NV_DRIVER_VERSION libnvidia-ml.so.1
     ln -v -s libcuda.so.$NV_DRIVER_VERSION libcuda.so.1
