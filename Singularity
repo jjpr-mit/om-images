@@ -25,7 +25,7 @@ From: tensorflow/tensorflow:1.1.0-gpu-py3
     NV_DRIVER_FILE=NVIDIA-Linux-x86_64-${NV_DRIVER_VERSION}.run
 
     working_dir=$(pwd)
-    # download and run NIH NVIDIA driver installer
+    # download and run NIH NVIDIA driver installer 
     wget http://us.download.nvidia.com/XFree86/Linux-x86_64/${NV_DRIVER_VERSION}/NVIDIA-Linux-x86_64-${NV_DRIVER_VERSION}.run
 
     echo "Unpacking NVIDIA driver into container..."
