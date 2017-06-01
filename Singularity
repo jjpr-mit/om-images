@@ -50,6 +50,7 @@ PATH=$NV_DRIVER_PATH:\$PATH
 export PATH LD_LIBRARY_PATH
     
 " >> /environment   
+mkdir /braintree
 
 %test
     # Ensure that TensorFlow can be imported
